@@ -1,0 +1,11 @@
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.vscode/
+.idea/
+node_modules/
+
+# Local-only docs (not for public repo)
+CLAUDE.md
+deploy.md

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>tools — maatumo</title>
+  <meta name="description" content="maatumo のブラウザツール集 / Small browser tools by maatumo">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="title-block">
+        <h1>tools</h1>
+        <p data-i18n="subtitle">ブラウザだけで動く、ゼロ依存の小さなツール集</p>
+      </div>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang="ja">日本語</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="grid">
+      <article class="card">
+        <a class="card-link" href="https://maatumo.github.io/diff-viewer/" target="_blank" rel="noopener">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="7" height="16" rx="1"/>
+              <rect x="14" y="4" width="7" height="16" rx="1"/>
+              <line x1="5" y1="8" x2="8" y2="8"/>
+              <line x1="5" y1="11" x2="8" y2="11"/>
+              <line x1="5" y1="14" x2="7" y2="14"/>
+              <line x1="16" y1="8" x2="19" y2="8"/>
+              <line x1="16" y1="11" x2="18" y2="11"/>
+              <line x1="16" y1="14" x2="19" y2="14"/>
+              <line x1="16" y1="17" x2="19" y2="17"/>
+            </svg>
+          </div>
+          <h2>Diff Viewer</h2>
+          <p data-i18n="diffDesc">2つのテキストの差分を行 / 文字単位で表示。Myers O(ND) を vanilla JS で実装。</p>
+        </a>
+        <div class="card-meta">
+          <a href="https://github.com/maatumo/diff-viewer" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <a class="card-link" href="https://maatumo.github.io/jp-mesh-viewer/" target="_blank" rel="noopener">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="1"/>
+              <line x1="9" y1="3" x2="9" y2="21"/>
+              <line x1="15" y1="3" x2="15" y2="21"/>
+              <line x1="3" y1="9" x2="21" y2="9"/>
+              <line x1="3" y1="15" x2="21" y2="15"/>
+              <circle cx="12" cy="12" r="1.5" fill="currentColor"/>
+            </svg>
+          </div>
+          <h2>JP Mesh Viewer</h2>
+          <p data-i18n="meshDesc">日本の標準地域メッシュコードを地図上に矩形表示（1次〜1/8 次）。</p>
+        </a>
+        <div class="card-meta">
+          <a href="https://github.com/maatumo/jp-mesh-viewer" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <a class="card-link" href="https://maatumo.github.io/sql-formatter/" target="_blank" rel="noopener">
+          <div class="card-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <ellipse cx="12" cy="5" rx="8" ry="2.5"/>
+              <path d="M4 5v6c0 1.4 3.6 2.5 8 2.5s8-1.1 8-2.5V5"/>
+              <path d="M4 11v6c0 1.4 3.6 2.5 8 2.5s8-1.1 8-2.5v-6"/>
+            </svg>
+          </div>
+          <h2>SQL Formatter</h2>
+          <p data-i18n="sqlDesc">19 方言対応の SQL 整形ツール。完全オフライン動作。</p>
+        </a>
+        <div class="card-meta">
+          <a href="https://github.com/maatumo/sql-formatter" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="about">
+      <h2 data-i18n="aboutTitle">このサイトについて</h2>
+      <p data-i18n="aboutBody">
+        いずれもビルド不要のシングルファイル系ツールです。外部 CDN や追跡コードは使っておらず、
+        各ツールのリポジトリを clone して <code>index.html</code> を開けばオフラインでも動きます。
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <a href="https://github.com/maatumo/tools" target="_blank" rel="noopener">GitHub</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
